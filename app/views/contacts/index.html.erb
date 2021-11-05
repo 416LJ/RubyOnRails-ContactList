@@ -1,16 +1,15 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Contact List</h1>
 
-<table>
-  <thead>
+
+<table class="table table-bordered table-hover table-striped">
+  <thead class="thead-dark">
     <tr>
       <th>First Name </th>
       <th>Last Name </th>
       <th>Email </th>
       <th>Phone </th>
-      <th>Insta </th>
-      <th colspan="3"></th>
+      <th>Instagram </th>
+      <th colspan="3">Options</th>
     </tr>
   </thead>
 
@@ -24,7 +23,7 @@
         <td><%= contact.insta %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Contact', new_contact_path %>
+<%= link_to 'New Contact', new_contact_path, class:'btn btn-secondary' %>

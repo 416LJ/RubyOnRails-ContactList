@@ -1,29 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>First name:</strong>
+<div class="jumbotron">
+  <h1 class="display-4">
   <%= @contact.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
   <%= @contact.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
-
-<p>
-  <strong>Insta:</strong>
-  <%= @contact.insta %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+  </h1>
+  <p class="lead">
+<%= @contact.email %> |
+<%= @contact.phone %> |
+<%= @contact.insta %>
+</p><br/>
+  <p class="lead">
+<%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-secondary" %>
+<%= link_to 'Back', contacts_path, class:"btn btn-dark" %>
+  </p>
+</div>
+<p id="notice"><%= notice %></p>
