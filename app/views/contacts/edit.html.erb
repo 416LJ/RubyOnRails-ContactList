@@ -3,4 +3,5 @@
 <%= render 'form', contact: @contact %>
 <br/>
 <%= link_to 'Show', @contact, class:'btn btn-secondary' %>
+<%= link_to 'Delete', @contact, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn" %>
 <%= link_to 'Back', contacts_path, class:'btn btn-dark' %>

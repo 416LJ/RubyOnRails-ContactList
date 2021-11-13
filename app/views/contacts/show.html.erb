@@ -10,6 +10,7 @@
 </p><br/>
   <p class="lead">
 <%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-secondary" %>
+<%= link_to 'Delete', @contact, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn" %>
 <%= link_to 'Back', contacts_path, class:"btn btn-dark" %>
   </p>
 </div>
