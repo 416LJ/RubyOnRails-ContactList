@@ -1,0 +1,9 @@
+Start server: rails s
+Install bundles: bundle install
+Install devise: rails generate devise:install
+
+Install views: rails g devise:views
+Generate pages: rails generate devise user\
+
+Migrate DB: rails db:migrate
+See routes: rails routes
